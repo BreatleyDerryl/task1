@@ -10,13 +10,10 @@
     <title>task1</title> 
 </head>
 <body>
-    
     <header id="home">
         <div class="container">
             <nav>
             <div class="logo">LOGO</div>
-     
-            
                 <div class="navitem">
                 <ul>
                     <li><a class="active" href="#home">Home</a></li>
@@ -33,12 +30,26 @@
                     </ul>
                 </div>
             </nav>
+
+            
             <nav class="mobile-nav">
-                <div class="logo">LOGO</div>
                 <div class="menuicons">
-                    <img src="Images/menui.svg" style="width: 25px;height: 25px;">
+                    <img src="Images/menui.svg" style="width: 24px;height: 24px;">
                 </div>
             </nav>
+            <div class="mobilenav-menu-container">
+                <div class="close-icon">
+                    <img src="Images/close.svg" style="width: 24px;height: 24px;">
+                </div>
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#story">AboutUs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
             <div class="homesection">
                 <div class ="list">
                     <div class="item">
@@ -267,7 +278,7 @@
         </div>
     </header>
 <!---------------------------------------Review---------------------------------------------------->
-    <!-- <div id ="Review">
+    <div id ="Review">
         <div class="container">
             <div class="Review-text">
                 <h1>Customer Review</h1>
@@ -278,6 +289,19 @@
                     <video autoplay muted loop id="myvideo">
                     <source src="Images/rev v.mp4" type="video/mp4">
                     </video>
+                </div>
+                
+                <div class="RRwrap-phone">
+                    <div id="backbtn-ph"><img src="Images/Back Arrow.png" alt="" style="height: 24px; width: 24px;"></div>
+                    <div id="forwardbtn-ph"><img src="Images/Forward Button.png" alt="" style="height: 24px; width: 24px;"></div>
+                </div>
+                <div class ="Right-Review-phone">
+                    <div><span><img src="Images/rev1.jpg"></span> </div>  
+                    <div><span><img src="Images/rev1.jpg"></span> </div> 
+                    <div><span><img src="Images/rev1.jpg"></span> </div> 
+                    <div><span><img src="Images/rev1.jpg"></span> </div> 
+                    <div><span><img src="Images/rev1.jpg"></span> </div> 
+                    <div><span><img src="Images/rev1.jpg"></span> </div>  
                 </div>
                 <div class="RRwrap">
                     <div id="backbtn"><img src="Images/Back Arrow.png" alt=""></div>
@@ -297,7 +321,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
 <!------------------------------Popular Categories---------------------------------------->
     <div id="popularcategories">    
         <div class="container">
@@ -305,157 +329,283 @@
                 <h1>Popular Categories</h1>
                 <h2>Precision and Performance in Every Detail</h2>
             </div>
-            <div class="searchbox">
-                <div class="search-container">
-                    <select id="brandSelect" name="brand"><option value="" disabled selected>Select Brand</option></select>
-                    <select id="modelSelect" name="model"><option value="" disabled selected>Select Model</option></select>
-                    <select id="yearSelect" name="year"><option value="" disabled selected>Select Year</option></select>
-                    <input type="submit" value="Search">
-                </div>
-            </div>
-            <div class="popularsection">
-                <div class="popularcards">
-                    <div class="popularcardcontainer">
-                        <img src="Images/Car parts 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Car Parts</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                        <h5>Show All</h5>
-                        </div>
-                    </div> 
-                    <div class="popularcardcontainer">
-                        <img src="Images/body parts 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Body Parts</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                            <h5>Show All</h5>
-                        </div>
-                    </div> 
-                    <div class="popularcardcontainer">
-                        <img src="Images/mirrors 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Mirrors</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                            <h5>Show All</h5>
-                        </div>
-                    </div> 
-                    <div class="popularcardcontainer">
-                        <img src="Images/wheels 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Wheels</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                            <h5>Show All</h5>
-                        </div>
-                    </div> 
-                    <div class="popularcardcontainer">
-                        <img src="Images/helmet2 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Helmets</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                            <h5>Show All</h5>
-                        </div>
-                    </div> 
-                    <div class="popularcardcontainer">
-                        <img src="Images/riding glove 1.png" alt="">
-                        <div class="cardinfo">
-                            <h3>Riding Kit</h3>
-                        </div>
-                        <div class="options">
-                            <h4>4 Options</h4>
-                        </div>
-                        <div class="Show">
-                            <h5>Show All</h5>
-                        </div> 
+                <div class="searchbox">
+                    <div class="search-container">
+                        <select id="brandSelect" name="brand"><option value="" disabled selected>Select Brand</option></select>
+                        <select id="modelSelect" name="model"><option value="" disabled selected>Select Model</option></select>
+                        <select id="yearSelect" name="year"><option value="" disabled selected>Select Year</option></select>
+                        <input type="submit" value="Search">
                     </div>
-                </div>                       
-                <div class="banner">
-                    <div class="slider">
-                        <div class="slides">
-                            <input type="radio" name ="radio-btn" id="radio1">
-                            <input type="radio" name ="radio-btn" id="radio2">
-                            <input type="radio" name ="radio-btn" id="radio3">
-                            <input type="radio" name ="radio-btn" id="radio4">
-                            <div class="slide first">
-                                <img src="Images/Rectangle 18.jpg">
-                                <!-- <button class="banner-btn">DISCOVER SAVINGS</button> -->
-                                </img>
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Rectangle 18.jpg" >
-                                <!-- <button class="banner-btn">DISCOVER SAVINGS</button> -->
-                                </img>
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Rectangle 18.jpg" >
-                                <!-- <button class="banner-btn">DISCOVER SAVINGS</button> -->
-                                </img>
-                            </div>
-                            <div class="slide">
-                                <img src="Images/Rectangle 18.jpg" style="border-radius: 10px;">
-                                <!-- <button class="banner-btn">DISCOVER SAVINGS</button> -->
-                                </img>
-                            </div>
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
-                            </div>
-                        </div>
-
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                            <label for="radio4" class="manual-btn"></label>
-                        </div>
-                    </div>              
                 </div>
-            </div>    
+                <div class="popularsection">
+                    <div class="popularcards">
+                        <div class="popularcardcontainer">
+                            <img src="Images/Car parts 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Car Parts</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                            <h5>Show All</h5>
+                            </div>
+                        </div> 
+                        <div class="popularcardcontainer">
+                            <img src="Images/body parts 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Body Parts</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                                <h5>Show All</h5>
+                            </div>
+                        </div> 
+                        <div class="popularcardcontainer">
+                            <img src="Images/mirrors 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Mirrors</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                                <h5>Show All</h5>
+                            </div>
+                        </div> 
+                        <div class="popularcardcontainer">
+                            <img src="Images/wheels 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Wheels</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                                <h5>Show All</h5>
+                            </div>
+                        </div> 
+                        <div class="popularcardcontainer">
+                            <img src="Images/helmet2 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Helmets</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                                <h5>Show All</h5>
+                            </div>
+                        </div> 
+                        <div class="popularcardcontainer">
+                            <img src="Images/riding glove 1.png" alt="">
+                            <div class="cardinfo">
+                                <h3>Riding Kit</h3>
+                            </div>
+                            <div class="options">
+                                <h4>4 Options</h4>
+                            </div>
+                            <div class="Show">
+                                <h5>Show All</h5>
+                            </div> 
+                        </div>
+                    </div>                       
+                    <div class="banner">
+                        <div class="slider">
+                            <div class="slides">
+                                <input type="radio" name ="radio-btn" id="radio1">
+                                <input type="radio" name ="radio-btn" id="radio2">
+                                <input type="radio" name ="radio-btn" id="radio3">
+                                <input type="radio" name ="radio-btn" id="radio4">
+                                <div class="slide first">
+                                    <img src="Images/Rectangle 18.jpg">
+                                    <button class="banner-btn">DISCOVER SAVINGS</button>
+                                    </img>
+                                </div>
+                                <div class="slide">
+                                    <img src="Images/Rectangle 18.jpg" >
+                                    <button class="banner-btn">DISCOVER SAVINGS</button>
+                                    </img>
+                                </div>
+                                <div class="slide">
+                                    <img src="Images/Rectangle 18.jpg" >
+                                    <button class="banner-btn">DISCOVER SAVINGS</button>
+                                    </img>
+                                </div>
+                                <div class="slide">
+                                    <img src="Images/Rectangle 18.jpg" style="border-radius: 10px;">
+                                    <button class="banner-btn">DISCOVER SAVINGS</button>
+                                    </img>
+                                </div>
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+                            </div>
+
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+                
         </div>
-    </div>
+    </div> 
 <!-----------------------------------------------New Arrival--------------------------------------------->    
-    <!-- <div id="newarrival">
+    <div id="newarrival">
         <div class="container">
             <div class="newarrival-text">
                 <h1>New Arrivals</h1>
                 <h2>Explore our new range of Products</h2>
             </div>
             <div class="newcard-section">
-            <div class="newcard">
-                <div class="newcard1">
-                    <div class="discount">
-                        <h6></h6>
+                <div class="newcard">
+                    <div class="newcard1">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/shock observer.png" alt="">
+                        <div class="newcard-info">
+                            <h3>AutoElite Parts - Shock absorber</h3>
+                        </div>
+                        <div class="newcard-rectangle">
+                            <h3>SELECT CAR MODEL     |</h3>
+                            <div class="sort">
+                                <img src="Images/Sort Down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewimg">
+                            <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
+                        </div>
+                        <div class="rate">
+                            <h3>$100</h3>
+                        </div>
+                        <button class="buy-btn">Buy Now</button>
+                        <div class="ellipse-div">
+                            <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
+                        </div> 
                     </div>
-                    <img class="newarrivalimage" src="Images/shock observer.png" alt="">
+                    <div class="newcard2">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/plug.png" alt="">
+                        <div class="newcard-info">
+                            <h3>AutoElite Parts - Power Plugs</h3>
+                        </div>
+                        <div class="newcard-rectangle">
+                            <h3>SELECT CAR MODEL     |</h3>
+                            <div class="sort">
+                                <img src="Images/Sort Down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewimg">
+                            <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
+                        </div>
+                        <div class="rate">
+                            <h3>$100</h3>
+                        </div>
+                        <button class="buy-btn">Buy Now</button>
+                        <div class="ellipse-div">
+                            <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
+                        </div>
+                    </div>
+                    <div class="newcard3">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/engine cover.png" alt="">
+                        <div class="newcard-info">
+                            <h3>AutoElite Parts - Engine Cover</h3>
+                        </div>
+                        <div class="newcard-rectangle">
+                            <h3>SELECT CAR MODEL     |</h3>
+                            <div class="sort">
+                                <img src="Images/Sort Down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewimg">
+                            <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
+                        </div>
+                        <div class="rate">
+                            <h3>$100</h3>
+                        </div>
+                        <button class="buy-btn">Buy Now</button>
+                        <div class="ellipse-div">
+                            <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
+                        </div>
+                    </div>
+                    <div class="newcard4">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/bearing.png" alt="">
+                        <div class="newcard-info">
+                            <h3>AutoElite Parts - Bearings</h3>
+                        </div>
+                        <div class="newcard-rectangle">
+                            <h3>SELECT CAR MODEL     |</h3>
+                            <div class="sort">
+                                <img src="Images/Sort Down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewimg">
+                            <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
+                        </div>
+                        <div class="rate">
+                            <h3>$100</h3>
+                        </div>
+                        <button class="buy-btn">Buy Now</button>
+                        <div class="ellipse-div">
+                            <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
+                        </div>
+                    </div>
+                    <div class="newcard5">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/brakepads.png" alt="">
+                        <div class="newcard-info">
+                            <h3>AutoElite Parts - Brake pads</h3>
+                        </div>
+                        <div class="newcard-rectangle">
+                            <h3>SELECT CAR MODEL     |</h3>
+                            <div class="sort">
+                                <img src="Images/Sort Down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewimg">
+                            <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
+                        </div>
+                        <div class="rate">
+                            <h3>$100</h3>
+                        </div>
+                        <button class="buy-btn">Buy Now</button>
+                        <div class="ellipse-div">
+                            <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
+                        </div>
+                    </div>
+                    <div class="newcard6">
+                        <div class="discount">
+                            <h6></h6>
+                        </div>
+                        <img class="newarrivalimage" src="Images/cluchplate.png"alt="">
                     <div class="newcard-info">
-                        <h3>AutoElite Parts - Shock absorber</h3>
+                        <h3>AutoElite Parts - Cluch plate</h3>
                     </div>
                     <div class="newcard-rectangle">
                         <h3>SELECT CAR MODEL     |</h3>
                         <div class="sort">
                             <img src="Images/Sort Down.png" alt="">
-                        </div>
+                            </div>
                     </div>
                     <div class="reviewimg">
                         <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
@@ -466,142 +616,13 @@
                     <button class="buy-btn">Buy Now</button>
                     <div class="ellipse-div">
                         <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
-                    </div> 
-                </div>
-
-                <div class="newcard2">
-                    <div class="discount">
-                        <h6></h6>
                     </div>
-                    <img class="newarrivalimage" src="Images/plug.png" alt="">
-                    <div class="newcard-info">
-                        <h3>AutoElite Parts - Power Plugs</h3>
-                    </div>
-                    <div class="newcard-rectangle">
-                        <h3>SELECT CAR MODEL     |</h3>
-                        <div class="sort">
-                            <img src="Images/Sort Down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="reviewimg">
-                        <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
-                    </div>
-                    <div class="rate">
-                        <h3>$100</h3>
-                    </div>
-                    <button class="buy-btn">Buy Now</button>
-                    <div class="ellipse-div">
-                        <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
                     </div>
                 </div>
-
-                <div class="newcard3">
-                    <div class="discount">
-                        <h6></h6>
-                    </div>
-                    <img class="newarrivalimage" src="Images/engine cover.png" alt="">
-                    <div class="newcard-info">
-                        <h3>AutoElite Parts - Engine Cover</h3>
-                    </div>
-                    <div class="newcard-rectangle">
-                        <h3>SELECT CAR MODEL     |</h3>
-                        <div class="sort">
-                            <img src="Images/Sort Down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="reviewimg">
-                        <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
-                    </div>
-                    <div class="rate">
-                        <h3>$100</h3>
-                    </div>
-                    <button class="buy-btn">Buy Now</button>
-                    <div class="ellipse-div">
-                        <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
-                    </div>
-                </div>
-                <div class="newcard4">
-                    <div class="discount">
-                        <h6></h6>
-                    </div>
-                    <img class="newarrivalimage" src="Images/bearing.png" alt="">
-                    <div class="newcard-info">
-                        <h3>AutoElite Parts - Bearings</h3>
-                    </div>
-                    <div class="newcard-rectangle">
-                        <h3>SELECT CAR MODEL     |</h3>
-                        <div class="sort">
-                            <img src="Images/Sort Down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="reviewimg">
-                        <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
-                    </div>
-                    <div class="rate">
-                        <h3>$100</h3>
-                    </div>
-                    <button class="buy-btn">Buy Now</button>
-                    <div class="ellipse-div">
-                        <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
-                    </div>
-                </div>
-
-
-                <div class="newcard5">
-                    <div class="discount">
-                        <h6></h6>
-                    </div>
-                    <img class="newarrivalimage" src="Images/brakepads.png" alt="">
-                    <div class="newcard-info">
-                        <h3>AutoElite Parts - Brake pads</h3>
-                    </div>
-                    <div class="newcard-rectangle">
-                        <h3>SELECT CAR MODEL     |</h3>
-                        <div class="sort">
-                            <img src="Images/Sort Down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="reviewimg">
-                        <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
-                    </div>
-                    <div class="rate">
-                        <h3>$100</h3>
-                    </div>
-                    <button class="buy-btn">Buy Now</button>
-                    <div class="ellipse-div">
-                        <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
-                    </div>
-                </div>
-                <div class="newcard6">
-                    <div class="discount">
-                        <h6></h6>
-                    </div>
-                    <img class="newarrivalimage" src="Images/cluchplate.png"alt="">
-                <div class="newcard-info">
-                    <h3>AutoElite Parts - Cluch plate</h3>
-                </div>
-                <div class="newcard-rectangle">
-                    <h3>SELECT CAR MODEL     |</h3>
-                    <div class="sort">
-                        <img src="Images/Sort Down.png" alt="">
-                        </div>
-                </div>
-                <div class="reviewimg">
-                    <img src="Images/review 1.png" alt=""><h3>Review</h3></img>
-                </div>
-                <div class="rate">
-                    <h3>$100</h3>
-                </div>
-                <button class="buy-btn">Buy Now</button>
-                <div class="ellipse-div">
-                    <img class="shopping-cart-icon" alt="" src="Images/Shopping Cart.png">
-                </div>
-                </div>
+                <div class="explore"><h3>Explore all</h3></div> 
             </div>
-            <div class="explore"><h3>Explore all</h3></div> 
         </div>
     </div>
-    </div> -->
 
 <!------------------------------------------------------------Ourstory------------------------------------------------------------------>
 
@@ -676,7 +697,7 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> 
 <!------------------------------------------------>
 <script>
     let scrollContainer2 = document.querySelector(".Right-Review");

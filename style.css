@@ -48,11 +48,15 @@ body{
 }
 .container{
     margin: 0 auto;
-    padding: 5px 5px;
 }
+nav.mobile-nav{
+    display: none;
+}
+/*-------------------------------------home-----------------------------------*/
+
+
 header{
     width: 100%;
-    height: 100vb;
     background-size: cover;
     background-position: center;
 }
@@ -84,10 +88,6 @@ nav{
 
 }
 
-/* nav.scrolled{
-    box-shadow: 0 16px 14px -8px rgba(239, 111, 111, 0.186);
-    border-radius: 0 0 8px 8px;
-} */
 
 nav .logo{
     font-size: 20px;
@@ -539,17 +539,19 @@ line-height: 0.8em;
 }
 /*-----------------Review-----------------------*/
 
+
+
 #Review{
-    padding: 80px 0px;
-    display: flex;  
+    padding: 100px 0px;
+    display: flex; 
+    width: 100%;
+    min-height: 100vh; 
 }
-.Review-text h1{
-    color: var(--white);
-    margin-left: 42% ;
+.Review-text{
+    text-align: center;
+    color: var(--white); 
 }
 .Review-text h2{
-    margin-left: 43% ;
-    color: var(--white);
     font-size: 14px;
     font-weight: lighter;
     font-style: italic;
@@ -566,10 +568,10 @@ line-height: 0.8em;
     width: 60%;
     height: 510px;
     display: block;
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0;
 }
 .Right-Review{
-    flex-basis: 75%;
+    
     margin-top: -450px;
     margin-left: 400px;
     width: 1100px;
@@ -622,6 +624,8 @@ line-height: 0.8em;
 #popularcategories{
     display: flex;
     padding: 100px 0;
+    width: 100%;
+    min-height: 100vh; 
 }
 .Popular-text{
     text-align: center;
@@ -637,6 +641,7 @@ line-height: 0.8em;
     color: var(--white);
 }
 
+
 /* Search container */
 .searchbox {
     max-width: 1300px;
@@ -648,8 +653,7 @@ line-height: 0.8em;
 .search-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1px;
-    
+    gap: 1px;   
 }
 
 select, input[type="submit"] {
@@ -675,16 +679,18 @@ input[type="submit"]:hover {
 
 .popularsection{
     display: flex;
-    justify-content: space-between;
-    margin: 0px;
+    margin: 50px auto;
+    padding: 40px;
 }
 .popularcards{
-    margin-left: 9%;
     display: flex;
     justify-self: space-between;
-    gap: 0px;
-    width: 75%;
+    gap: 10px;
+    width: 70%;
+    box-sizing: border-box;
     flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0;
 }
 .cardinfo{
     position: relative;
@@ -715,7 +721,7 @@ input[type="submit"]:hover {
 .popularcardcontainer{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 280px;
+    width: 260px;
     transition: transform 0.3s ease;
     height: 140px;
     
@@ -725,7 +731,8 @@ input[type="submit"]:hover {
 }
 .banner{
     position: relative;
-    width: 230px;
+    box-sizing: border-box;
+    width: 220px;
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
@@ -753,7 +760,7 @@ input[type="submit"]:hover {
 .navigation-manual{
     position: absolute;
     width: 80px;
-    margin-top: -60px;
+    margin-top: -99px;
     margin-left: 78px;
     display: flex;
 }
@@ -818,18 +825,15 @@ input[type="submit"]:hover {
 
 #newarrival{
     padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    width: 100%;
+    min-height: 100vh;
 }
-
 
 .newarrival-text
 {
-    position: absolute;
     color: var(--white);
     text-align: center;
-    margin-left: 34%;
 }
 .newarrival-text h1{
     font-size: 30px;
@@ -840,15 +844,17 @@ input[type="submit"]:hover {
     font-style: italic;
 }
 
-
+.newcard-section{
+    margin-top: 50px 0;
+    padding: 40px;
+}
 .newcard{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 80px; /* Horizontal gap - you can keep this value or adjust as needed */
     grid-row-gap: 20px;
     height: 120%;
-    margin-top: 100px;
-    
+   
 }
 .newcard1{
     border-radius: 10px;
@@ -975,7 +981,7 @@ input[type="submit"]:hover {
 
 .explore h3{
     color: var(--white);
-    margin-left: 1150px;
+    text-align: end;
     margin-top: 50px;
     text-decoration: underline;
     font-weight: 100;
@@ -985,33 +991,32 @@ input[type="submit"]:hover {
 /*--------------our story------------------*/
 #story{
     padding: 50px 0;
-    display: flex;
     width: 100%;
-    height: 100vb;
+    
     background-size: cover;
     color: var(--white);
     background-image:url(Images/01-michelin-e-primacy-electric-car-tyre\ 1.png) ;
 }
 .ourstory h1{
-    position: absolute;
     font-size: 30px;
     margin-top: 100px;
-    margin-left: 47%;
+    text-align: center;
 }
 .ourstory-details {
     font-size: large;
-    margin-left: 140px;
     text-align: center;
     font-weight: 500;
     font-style: italic;
-    width: 80%;
-    padding: 150px 20px; 
+    width: 100%;
+    padding: 50px 40px; 
     box-sizing: border-box;
     line-height: 210%;
 }
 /*---------------footer-------------------*/
 #contact{
     padding: 100px 0;
+    width: 100%;
+    background-size: cover;
     color: var(--white);
     background: url(Images/jakob-owens-U_2kP7bkFKw-unsplash\ 1.png);
 }
@@ -1088,12 +1093,79 @@ form input,form textarea{
 
 
 
+.mobilenav-menu-container{
+    display:none
+}
+.Right-Review-phone{
+    display: none;
+}
+.RRwrap-phone{
+    display: none;
+}
 /* -----------------------------------Mobilescreen--------------------------------------- */
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:770px) {
+    
+    nav .logo{
+        margin-left: -50px;
+
+    }
     .navitem{
         display:none;
     }
+    .navmenu{
+        display:none;
+    }
+    nav.mobile-nav{
+       display: flex;
+       justify-content: end;
+       margin-left: 50px;
+    }
+       
+    .mobilenav-menu-container{
+        display:block;
+        position: fixed;
+        height: 100vh;
+        width: 40%;
+        top: 0;
+        right: -100%;
+        background: rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: all 400ms ease;
+    }
+    .mobilenav-menu-container.active{
+        right: 0;
+    }
+    .mobilenav-menu-container .close-icon{
+        position: fixed;
+        right: 0;
+        top:30px;
+        right: 70px;
+        opacity: 0;
+        pointer-events: none;
+        transition: 400ms ease;
+        
+    }
+    .mobilenav-menu-container.active .close-icon{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .mobilenav-menu-container ul{
+        list-style: none;
+        padding: 50px 0;
+    }
+    .mobilenav-menu-container ul li{
+        margin: 20px 0;
+        text-align: center;
+    }
+    .mobilenav-menu-container ul li a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+    }
+
     .homesection .list .item{
         width: 100%;
         font-size: 10px;
@@ -1127,23 +1199,107 @@ form input,form textarea{
         float: right;
     }
 
-nav{
-display: none;
-}
+    #Review{
+        display: flex; 
+        width: 100%;
+        min-height: 100vh; 
+    }
 
-nav.mobile-nav{
-    display: flex;
-    margin-top: 20px;
-    width:28%
+    .Review-text{
+        text-align: center;
+    }
+    
+    .reviewsection{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .left-Review video{
+        position: relative;
+        object-fit: cover;
+        margin-top: 50px;
+        width: 50%;
+        height: 410px;
+        display: block;
+        border-radius: 0 30px 30px 0;
+    }
+    .Right-Review{
+        display: none;
+    }
+    .Right-Review-phone{
+        margin-top: -60%;
+        display: flex;
+        width: 400px;
+        overflow-x: scroll;
+
+    }
+    .Right-Review-phone div{
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        padding: 10px;
+        flex: none;
+    }
+    .Right-Review-phone img{
+        width: 100%;
+        height: 80%;
+    }
+    .Right-Review-phone div img{
+        filter: grayscale(100);
+        transform: 0.5s;
+    }
+    .Right-Review-phone div img:hover{
+        filter: grayscale(0);
+        cursor: pointer;
+        transform: scale(1.1);   
+    }
+    /* .Right-Review-phone::-webkit-scrollbar{
+        display: none;
+    } */
+    .RRwrap{
+        display: none;
+    }
+    .RRwrap-phone{
+        display: flex;
+        margin-top: -410px;
+        margin-left: 300px;
+        gap: 20px;
+    }
+    .RRwrap-phone #backbtn{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        background: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;   
+    }
+    .RRwrap-phone #forwardbtn{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        background: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;   
+    }
+    .Information-container{
+        margin-left: 0%;
+    }
+    .newsletter-container{
+        margin-left: 0%;
+        line-height: 200%;
+    }
 }
-.popularcards{
-    flex-basis: 100%;
-}
-}
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
 /*-------------------------Ipad Screen-----------------------------------------------------------*/
-nav.mobile-nav{
-    display: none;
-}
+
 
 
 @media screen and (max-width:1100px) 
@@ -1240,7 +1396,7 @@ header, .homesection, header .container{
     }
 }
 
-.left-Review{
+/* .left-Review{
     opacity: 0;
     filter: blur(5px);
     transform: translateZ(100%);
@@ -1255,7 +1411,7 @@ header, .homesection, header .container{
     .hidden{
         transition: none;
     }
-}
+} */
 
 .ourstory{
     opacity: 0;
@@ -1275,7 +1431,7 @@ header, .homesection, header .container{
 }
 
 
-.popularcards{
+/* .popularcards{
     opacity: 0;
     filter: blur(5px);
     transform: translateZ(100%);
@@ -1285,7 +1441,7 @@ header, .homesection, header .container{
     opacity: 1;
     filter: blur(0);
     transform: translateZ(0);
-}
+} */
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;

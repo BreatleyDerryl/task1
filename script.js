@@ -87,19 +87,19 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 
 
 
-const observer4 = new IntersectionObserver((entries)=>{
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting){
-            entry.target.classList.add('show4');
-        }
-        else{
-            entry.target.classList.remove('show4');
-        }
-    });
-})
-const hiddenElements4 = document.querySelectorAll('.left-Review');
-hiddenElements4.forEach((el) => observer4.observe(el));
+// const observer4 = new IntersectionObserver((entries)=>{
+//     entries.forEach((entry) =>{
+//         console.log(entry)
+//         if (entry.isIntersecting){
+//             entry.target.classList.add('show4');
+//         }
+//         else{
+//             entry.target.classList.remove('show4');
+//         }
+//     });
+// })
+// const hiddenElements4 = document.querySelectorAll('.left-Review');
+// hiddenElements4.forEach((el) => observer4.observe(el));
 
 
 
@@ -118,19 +118,19 @@ const hiddenElements6 = document.querySelectorAll('.ourstory');
 hiddenElements6.forEach((el) => observer6.observe(el));
 
 
-const observer7 = new IntersectionObserver((entries)=>{
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting){
-            entry.target.classList.add('show7');
-        }
-        else{
-            entry.target.classList.remove('show7');
-        }
-    });
-})
-const hiddenElements7 = document.querySelectorAll('.popularcards');
-hiddenElements7.forEach((el) => observer7.observe(el));
+// const observer7 = new IntersectionObserver((entries)=>{
+//     entries.forEach((entry) =>{
+//         console.log(entry)
+//         if (entry.isIntersecting){
+//             entry.target.classList.add('show7');
+//         }
+//         else{
+//             entry.target.classList.remove('show7');
+//         }
+//     });
+// })
+// const hiddenElements7 = document.querySelectorAll('.popularcards');
+// hiddenElements7.forEach((el) => observer7.observe(el));
 
 
 
@@ -180,3 +180,28 @@ seeMoreButtons.forEach(button =>{
 backButton.onclick = function(){
     homesection.classList.remove('showDetail');
 }
+
+
+const menuIcon = document.querySelector(".menuicons");
+
+const closeIcon = document.querySelector(".mobilenav-menu-container .close-icon");
+const mobileMenuContainer = document.querySelector(".mobilenav-menu-container");
+menuIcon.addEventListener("click",() => {
+    mobileMenuContainer.classList.add("active");
+});
+closeIcon.addEventListener("click",() => {
+    mobileMenuContainer.classList.remove("active");
+});
+
+
+let scrollContainerphn = document.querySelector(".Right-Review-phone");
+let backbtnph = document.getElementById("backbtn-ph");
+let forwardbtnph = document.getElementById("forwardbtn-ph");
+forwardbtnph.addEventListener("click",()=>{
+    scrollContainerphn.style.scrollBehavior ="smooth";
+    scrollContainerphn.scrollLeft +=350;
+});
+backbtnph.addEventListener("click",()=>{
+    
+    scrollContainerphn.scrollLeft -=350;
+});
