@@ -678,15 +678,17 @@ input[type="submit"]:hover {
 
 
 .popularsection{
+    max-width: 1300px;
     display: flex;
     margin: 50px auto;
     padding: 40px;
+    justify-content: space-between;
 }
 .popularcards{
     display: flex;
     justify-self: space-between;
-    gap: 10px;
-    width: 70%;
+    gap: 40px;
+    width: 80%;
     box-sizing: border-box;
     flex-wrap: wrap;
     overflow: hidden;
@@ -721,7 +723,7 @@ input[type="submit"]:hover {
 .popularcardcontainer{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 260px;
+    width: 280px;
     transition: transform 0.3s ease;
     height: 140px;
     
