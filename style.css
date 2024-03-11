@@ -645,7 +645,7 @@ line-height: 0.8em;
 /* Search container */
 .searchbox {
     max-width: 1300px;
-    margin: 50px auto;
+   
     border-radius: 5px;
     padding: 40px;
 }
@@ -680,7 +680,6 @@ input[type="submit"]:hover {
 .popularsection{
     max-width: 1300px;
     display: flex;
-    margin: 50px auto;
     padding: 40px;
     justify-content: space-between;
 }
@@ -688,12 +687,10 @@ input[type="submit"]:hover {
     display: flex;
     justify-self: space-between;
     gap: 40px;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    overflow: hidden;
     margin: 0;
-    background-color: red;
 }
 .cardinfo{
     position: relative;
@@ -724,19 +721,17 @@ input[type="submit"]:hover {
 .popularcardcontainer{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
+    width: 30%;
     transition: transform 0.3s ease;
-    height: 140px;
-    
+    height: 45%;
 }
 .popularcardcontainer:hover{
     background-color:#fff
 }
 .banner{
-    position: relative;
     box-sizing: border-box;
     width: 220px;
-    height: 300px;
+    height: 320px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -1095,7 +1090,6 @@ form input,form textarea{
 }
 
 
-
 .mobilenav-menu-container{
     display:none
 }
@@ -1287,6 +1281,7 @@ form input,form textarea{
         border: none;
         cursor: pointer;   
     }
+   
     .Information-container{
         margin-left: 0%;
     }
@@ -1333,26 +1328,30 @@ form input,form textarea{
     .popularsection{
         max-width: 100%;
         padding: 40px;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
     .popularcards{
-        display: flex;
-        justify-self: space-between;
         gap: 40px;
-        width: 80%;
-        box-sizing: border-box;
+        width: 100%;
         flex-wrap: wrap;
-        overflow: hidden;
         margin: 0;
+        background-color: red;
+    }
+    .popularcardcontainer{
+        width: 100%;
+        transition: transform 0.3s ease;
+        height: 15%;
+        
     }
     .banner{
-        margin: 50px;
         position: relative;
         box-sizing: border-box;
         width: 220px;
         height: 300px;
         overflow: hidden;
         border-radius: 10px;
+        background-color: green;
     }
 }
 /*------------------------------------------------------------------------------------------------------------*/
@@ -1404,7 +1403,7 @@ header, .homesection, header .container{
     background: url(Images/jakob-owens-U_2kP7bkFKw-unsplash\ 1.png);
 }
 .newsletter-container{
-    margin-left: 2%;
+    margin-left: 0%;
     line-height: 200%;
 }
 
