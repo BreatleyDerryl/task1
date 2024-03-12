@@ -826,7 +826,9 @@ input[type="submit"]:hover {
     width: 100%;
     min-height: 100vh;
 }
-
+#carmodel{
+    width: 100%;
+}
 .newarrival-text
 {
     color: var(--white);
@@ -1146,7 +1148,7 @@ form input,form textarea{
         position: relative;
         object-fit: cover;
         margin-top: 50px;
-        width: 50%;
+        width: 65%;
         height: 410px;
         display: block;
         border-radius: 0 30px 30px 0;
@@ -1157,17 +1159,18 @@ form input,form textarea{
     .Right-Review-phone{
         margin-top: -60%;
         display: flex;
-        width: 400px;
+        width: 350px;
         overflow-x: scroll;
 
     }
     .Right-Review-phone div{
-        width: 90%;
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
         grid-gap: 0px;
         padding: 10px;
         flex: none;
+        
     }
     .Right-Review-phone img{
         width: 100%;
@@ -1299,9 +1302,6 @@ form input,form textarea{
 }
 /*------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:481px) and (max-width:802px) {
-    #Review{
-        display: none;
-    }
     nav .logo{
         margin-left: -50px;
 
@@ -1361,6 +1361,99 @@ form input,form textarea{
         color: var(--white);
         font-size: 18px;
     }
+    #Review{
+        display: flex; 
+        width: 100%;
+        min-height: 100vh; 
+    }
+
+    .Review-text{
+        text-align: center;
+    }
+    
+    .reviewsection{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .left-Review video{
+        position: relative;
+        object-fit: cover;
+        margin-top: 50px;
+        width: 50%;
+        height: 410px;
+        display: block;
+        border-radius: 0 30px 30px 0;
+    }
+    .Right-Review{
+        display: none;
+    }
+    .Right-Review-phone{
+        margin-left: 40%;
+        margin-top: -40%;
+        display: flex;
+        width: 350px;
+        overflow-x: scroll;
+
+    }
+    .Right-Review-phone div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 0px;
+        padding: 10px;
+        flex: none;
+        
+    }
+    .Right-Review-phone img{
+        width: 100%;
+        height: 80%;
+    }
+    .Right-Review-phone div img{
+        filter: grayscale(100);
+        transform: 0.5s;
+    }
+    .Right-Review-phone div img:hover{
+        filter: grayscale(0);
+        cursor: pointer;
+        transform: scale(1.1);   
+    }
+    /* .Right-Review-phone::-webkit-scrollbar{
+        display: none;
+    } */
+    .RRwrap{
+        display: none;
+    }
+    .RRwrap-phone{
+        display: flex;
+        margin-top: -400px;
+        margin-left: 600px;
+        gap: 20px;
+    }
+    .RRwrap-phone #backbtn{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        background: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;   
+    }
+    .RRwrap-phone #forwardbtn{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        background: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;   
+    }
+
+
+
+
+
+
     .popularsection{
         display: flex;
         flex-wrap: wrap;
