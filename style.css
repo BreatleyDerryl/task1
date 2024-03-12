@@ -645,7 +645,6 @@ line-height: 0.8em;
 /* Search container */
 .searchbox {
     max-width: 1300px;
-   
     border-radius: 5px;
     padding: 40px;
 }
@@ -679,51 +678,51 @@ input[type="submit"]:hover {
 
 .popularsection{
     max-width: 1300px;
+    align-items: center;
     display: flex;
     padding: 40px;
     justify-content: space-between;
 }
 .popularcards{
     display: flex;
-    justify-self: space-between;
-    gap: 40px;
+    justify-content: space-between;
     width: 80%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    margin: 0;
 }
+.popularcardcontainer{
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 40px;
+   
+}
+.popularcardinfo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.popularcardimage{
+    padding: 10px;
+}
+
 .cardinfo{
     position: relative;
     color: var(--dark);
-    margin-left: 150px;
-    margin-top: -50px;
 }
-.options{
-    position: relative;
+
+.cardinfo h4{
     color: var(--greyred);
-    font-weight: 1;
     font-size: 12px;
-    margin-left: 150px;
 }
-.Show{
-    position: relative;
-    margin-left: 200px;
-    margin-top: 30px;
-    font-size: 14px;
+
+.popularcardcontainer h5{
     color: var(--light-red);
-    text-decoration: underline;
-}
-  
-.popularcards img{
-    margin-left: 50px;
-    margin-top: 30px;
-}
-.popularcardcontainer{
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 30%;
-    transition: transform 0.3s ease;
-    height: 45%;
+    text-align: end;
 }
 .popularcardcontainer:hover{
     background-color:#fff
@@ -731,15 +730,15 @@ input[type="submit"]:hover {
 .banner{
     box-sizing: border-box;
     width: 220px;
-    height: 320px;
+    height: 330px;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 .banner img{
    width: 100%;
    height: 100%;
    object-fit: cover;
-
 }
 
 .slides{
@@ -843,154 +842,92 @@ input[type="submit"]:hover {
 }
 
 .newcard-section{
-    margin-top: 50px 0;
     padding: 40px;
+    max-width:1300px ;
+    align-items: center;
 }
 .newcard{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 80px; /* Horizontal gap - you can keep this value or adjust as needed */
-    grid-row-gap: 20px;
-    height: 120%;
-   
-}
-.newcard1{
-    border-radius: 10px;
-    height: 90%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.newcard2{
-    border-radius: 10px;
-    height: 90%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.newcard3{
-    border-radius: 10px;
-    height: 90%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.newcard4{
-    border-radius: 10px;
-    height: 105%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.newcard5{
-    border-radius: 10px;
-    height: 105%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.newcard6{
-    border-radius: 10px;
-    height: 105%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
- .newarrivalimage{
-    width: 100%;
-    height: 50%;
- }
-.newcard-info{
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-.newcard-rectangle{
-    margin-top: 10px;
-    width: 80%;
-    margin-left: 33px;
-    position: relative;
-    background-color: var(--white);
-    border: 1px solid rgba(51, 51, 51, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     box-sizing: border-box;
-    height: 40px;
 }
-.newcard-rectangle img{
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 20px;
+.newcardcontainer{
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
 }
-
-.newcard-rectangle h3{
-    margin-top: 12px;
-    margin-left: 30px;
-    color: rgba(51, 51, 51, 0.8) ;
-}
-
-.sort{
-    margin-left: 200px;
-    margin-top: -65px;
+.newarrimgparent{
+    height: 250px;
+    overflow: hidden;
 }
 
-.reviewimg img {
-    margin-top: 10px;
-    margin-left: 30px;
+.newarrivalimage{
+    width: 100%;
+ }
+.newcarddetail{
+    display: flex;
+    flex-wrap: wrap;   
 }
-
-.reviewimg h3{
-    margin-top: -24px;
-    margin-left: 130px;
-    color: rgba(51, 51, 51, 0.8) ;
+.newcard-info{
+    text-align: center;
+    padding: 10px auto;
 }
+.searchcar-container{
+    padding: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.newreview{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    color: var(--greyred);
+}
+.newcheckout{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
 
 .rate h3{
-    position: absolute;
-    margin-left: 33px;
-    margin-top: 20px;
-
-}
-
-.buy-btn{
-    color: var(--white);
-    background-color: var(--light-red);
-    border: none;
-    width: 50%;
-    margin-left: 80px;
-    position: absolute;
-    height: 35px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.ellipse-div{
-    position: absolute; 
-    border-radius: 50%;
-    margin-left: 280px;
-    margin-top: 9px;
-}
-.shopping-cart-icon{ 
-    border-radius: 50%;
-    width: 40px;
-    object-fit:scale-down;
-    height: 40px;
-    background-color: var(--dark);
-}
-
-.explore h3{
-    color: var(--white);
-    text-align: end;
-    margin-top: 50px;
-    text-decoration: underline;
-    font-weight: 100;
+    font-size: 26px;
+    font-weight: 400;
     font-style: italic;
 }
 
+.buy-btn{
+    
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: var(--light-red);
+    color: var(--white);
+}
+.buy-btn:hover{
+    background-color: red;
+}
+.shopping-cart-icon{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--greyred);
+    object-fit:scale-down;
+}
+.shopping-cart-icon:hover{
+    background-color: var(--darkgrey);
+}
 /*--------------our story------------------*/
 #story{
     padding: 50px 0;
     width: 100%;
-    
     background-size: cover;
     color: var(--white);
     background-image:url(Images/01-michelin-e-primacy-electric-car-tyre\ 1.png) ;
@@ -1019,22 +956,17 @@ input[type="submit"]:hover {
     background: url(Images/jakob-owens-U_2kP7bkFKw-unsplash\ 1.png);
 }
 .footerelements{
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 60px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .details-container{
-    width: 100%;
     line-height: 200%;
 }
 .details-container h2{
     color: var(--light-red);
 }
 
-.Information-container{
-    margin-left: 30%;
-}
 .Information-container h3{
     color: var(--light-red);
 }
@@ -1060,7 +992,6 @@ input[type="submit"]:hover {
 }
 
 .newsletter-container{
-    margin-left: -30%;
     line-height: 200%;
 }
 .newsletter-container h3{
@@ -1101,7 +1032,7 @@ form input,form textarea{
 }
 /* -----------------------------------Mobilescreen--------------------------------------- */
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:480px) {
     
     nav .logo{
         margin-left: -50px;
@@ -1323,8 +1254,6 @@ form input,form textarea{
         background-color: red;
     }
     
-    
-    
     .popularsection{
         max-width: 100%;
         padding: 40px;
@@ -1332,11 +1261,9 @@ form input,form textarea{
         flex-wrap: wrap;
     }
     .popularcards{
-        gap: 40px;
         width: 100%;
         flex-wrap: wrap;
         margin: 0;
-        background-color: red;
     }
     .popularcardcontainer{
         width: 100%;
@@ -1345,17 +1272,132 @@ form input,form textarea{
         
     }
     .banner{
+        align-items: center;
         position: relative;
         box-sizing: border-box;
-        width: 220px;
+        width: 100%;
         height: 300px;
         overflow: hidden;
         border-radius: 10px;
-        background-color: green;
     }
+    .footerelements{
+        padding: 0px 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .newcard-section{
+       
+    }
+    .newcardcontainer{
+        width: 100%;
+    }
+    
+
 }
 /*------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:802px) {
+    nav .logo{
+        margin-left: -50px;
 
+    }
+    .navitem{
+        display:none;
+    }
+    .navmenu{
+        display:none;
+    }
+    nav.mobile-nav{
+       display: flex;
+       justify-content: end;
+       margin-left: 50px;
+    }
+       
+    .mobilenav-menu-container{
+        display:block;
+        position: fixed;
+        height: 100vh;
+        width: 40%;
+        top: 0;
+        right: -100%;
+        background: rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: all 400ms ease;
+    }
+    .mobilenav-menu-container.active{
+        right: 0;
+    }
+    .mobilenav-menu-container .close-icon{
+        position: fixed;
+        right: 0;
+        top:30px;
+        right: 70px;
+        opacity: 0;
+        pointer-events: none;
+        transition: 400ms ease;
+        
+    }
+    .mobilenav-menu-container.active .close-icon{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .mobilenav-menu-container ul{
+        list-style: none;
+        padding: 50px 0;
+    }
+    .mobilenav-menu-container ul li{
+        margin: 20px 0;
+        text-align: center;
+    }
+    .mobilenav-menu-container ul li a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+    }
+    .popularsection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popularcards{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    .popularcardcontainer{
+        width: 45%;
+    }
+    .banner{
+        align-items: center;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .footerelements{
+        padding: 0px 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+   
+    .newcardcontainer{
+        width: 45%;
+    }
+
+
+
+
+
+
+}
 
 
 
@@ -1380,7 +1422,7 @@ nav{
 }
 .navmenu{
     position :relative;
-    margin-left: 00px;
+    margin-left: 0px;
 }
 
 
@@ -1394,20 +1436,40 @@ header, .homesection, header .container{
 .homesection .list .details .specification{
     overflow: auto;
 }
-#contact{
-    padding: 100px 0;
+.footerelements{
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.popularsection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popularcards{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    min-height: 100vh;
-    background-size: cover;
-    color: var(--white);
-    background: url(Images/jakob-owens-U_2kP7bkFKw-unsplash\ 1.png);
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
-.newsletter-container{
-    margin-left: 0%;
-    line-height: 200%;
+.popularcardcontainer{
+    width: 45%;
+}
+.banner{
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-
+.newcardcontainer{
+    width: 48%;
+}
 
 }
 
