@@ -905,7 +905,7 @@ input[type="submit"]:hover {
     
     cursor: pointer;
     border: none;
-    width: 200px;
+    width: 60%;
     height: 50px;
     background-color: var(--light-red);
     color: var(--white);
@@ -1287,9 +1287,10 @@ form input,form textarea{
         flex-wrap: wrap;
         gap: 20px;
     }
-    .newcard-section{
-       
+    .buy-btn{
+        width: 55%;
     }
+    
     .newcardcontainer{
         width: 100%;
     }
@@ -1298,6 +1299,9 @@ form input,form textarea{
 }
 /*------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:481px) and (max-width:802px) {
+    #Review{
+        display: none;
+    }
     nav .logo{
         margin-left: -50px;
 
@@ -1392,7 +1396,7 @@ form input,form textarea{
         width: 45%;
     }
 
-
+    
 
 
 
@@ -1408,7 +1412,9 @@ form input,form textarea{
 
 @media screen and (min-width:803px) and (max-width:1100px) 
 {
-
+#Review{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -1470,6 +1476,7 @@ header, .homesection, header .container{
 .newcardcontainer{
     width: 48%;
 }
+
 
 }
 
