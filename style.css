@@ -164,8 +164,9 @@ nav .logo{
 }
 
 .homesection .list .item img{
-    width: 480px ;
-    height: 480px;
+    /* width: 480px ;
+    height: 480px; */
+    width:50%;
     position: absolute;
     margin-left: 50%;
     top: 105%;
@@ -574,10 +575,10 @@ line-height: 0.8em;
 .Right-Review{
     margin-top: -450px;
     margin-left: 400px;
-    width: 1100px;
+    width: 100px;
     display: flex;
     overflow-x: scroll;
-    
+    position: relative;
 }
 .Right-Review div{
     width: 100%;
@@ -599,24 +600,16 @@ line-height: 0.8em;
 .Right-Review::-webkit-scrollbar{
     display: none;
 }
-#backbtn{
+.RRwrap{
+    z-index: 1;
+    gap: 10px;
+    display: flex;
     position: absolute;
-    margin-left: -350px;
-    margin-top: 10px;
-    background: none;
-    display: inline-block;
-    border: none;
-    cursor: pointer;   
+    cursor: pointer;
+    margin-left: 70%;
+    margin-top: 2%;
 }
-#forwardbtn{
-    position: absolute;
-    margin-left: -250px;
-    margin-top: 10px;
-    background: none;
-    display: inline-block;
-    border: none;
-    cursor: pointer;   
-}
+
 
 
 /*-------------------popular-categories--------------------*/
@@ -1184,9 +1177,9 @@ form input,form textarea{
         cursor: pointer;
         transform: scale(1.1);   
     }
-    /* .Right-Review-phone::-webkit-scrollbar{
+    .Right-Review-phone::-webkit-scrollbar{
         display: none;
-    } */
+    } 
     .RRwrap{
         display: none;
     }
@@ -1272,6 +1265,9 @@ form input,form textarea{
         transition: transform 0.3s ease;
         height: 15%;
         
+    }
+    .navigation-auto {
+        margin-left: 100px;
     }
     .banner{
         align-items: center;
@@ -1360,6 +1356,38 @@ form input,form textarea{
         color: var(--white);
         font-size: 18px;
     }
+    .homesection .list .item{
+        width: 100%;
+        font-size: 10px;
+    }
+    .homesection{
+        height: 700px;
+
+    }
+    .homesection .list{
+        height: 100%;
+        margin-left: -50px;
+    }
+    .homesection .list .item .intro{
+        width: 50%;
+    }
+    .homesection .list .item img{
+        width: 40%;
+    }
+    .homesection .showDetail .list .item .detail .title{
+        font-size: 32px;
+        
+    }
+    .homesection .showDetail .list .item .detail .des{
+        height: 100px;
+        overflow: auto;
+        
+    }
+    .homesection .showDetail .list .item .detail .checkout{
+        display: flex;
+        width: max-content;
+        float: right;
+    }
     #Review{
         display: flex; 
         width: 100%;
@@ -1413,9 +1441,9 @@ form input,form textarea{
         cursor: pointer;
         transform: scale(1.1);   
     }
-    /* .Right-Review-phone::-webkit-scrollbar{
+    .Right-Review-phone::-webkit-scrollbar{
         display: none;
-    } */
+    }
     .RRwrap{
         display: none;
     }
@@ -1468,6 +1496,9 @@ form input,form textarea{
         overflow: hidden;
         border-radius: 10px;
     }
+    .navigation-auto {
+       margin-left: 45%;
+    }
     .footerelements{
         padding: 0px 40px;
         display: flex;
@@ -1514,17 +1545,39 @@ nav{
     margin-left: 0px;
 }
 
-
-header, .homesection, header .container{
-    max-height: 100%;
-    max-width: 100%;
-}
 .homesection .list .item{
-    width: 90%;
+    width: 100%;
+    font-size: 10px;
 }
-.homesection .list .details .specification{
+.homesection{
+    height: 700px;
+
+}
+.homesection .list{
+    height: 100%;
+    margin-left: -50px;
+}
+.homesection .list .item .intro{
+    width: 50%;
+}
+.homesection .list .item img{
+    width: 40%;
+}
+.homesection .showDetail .list .item .detail .title{
+    font-size: 32px;
+    
+}
+.homesection .showDetail .list .item .detail .des{
+    height: 100px;
     overflow: auto;
+    
 }
+.homesection .showDetail .list .item .detail .checkout{
+    display: flex;
+    width: max-content;
+    float: right;
+}
+
 
 
 #Review{
@@ -1551,8 +1604,8 @@ header, .homesection, header .container{
     display: none;
 }
 .Right-Review-phone{
-    margin-left: 40%;
-    margin-top: -40%;
+    margin-left: 30%;
+    margin-top: -30%;
     display: flex;
     width: 350px;
     overflow-x: scroll;
@@ -1611,7 +1664,9 @@ header, .homesection, header .container{
     border: none;
     cursor: pointer;   
 }
-
+.navigation-auto {
+    margin-left: 45%;
+ }
 
 
 .footerelements{
@@ -1621,6 +1676,7 @@ header, .homesection, header .container{
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .popularsection{
     display: flex;
     flex-wrap: wrap;

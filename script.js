@@ -182,8 +182,10 @@ backButton.onclick = function(){
 }
 
 
-const menuIcon = document.querySelector(".menuicons");
 
+
+
+const menuIcon = document.querySelector(".menuicons");
 const closeIcon = document.querySelector(".mobilenav-menu-container .close-icon");
 const mobileMenuContainer = document.querySelector(".mobilenav-menu-container");
 menuIcon.addEventListener("click",() => {
@@ -192,6 +194,24 @@ menuIcon.addEventListener("click",() => {
 closeIcon.addEventListener("click",() => {
     mobileMenuContainer.classList.remove("active");
 });
+
+
+
+
+
+
+let scrollContainer2 = document.querySelector(".Right-Review");
+let backbtn = document.getElementById("backbtn");
+let forwardbtn = document.getElementById("forwardbtn");
+forwardbtn.addEventListener("click",()=>{
+    scrollContainer2.style.scrollBehavior ="smooth";
+    scrollContainer2.scrollLeft +=1100;
+});
+backbtn.addEventListener("click",()=>{
+    
+    scrollContainer2.scrollLeft -=1100;
+}); 
+
 
 
 let scrollContainerphn = document.querySelector(".Right-Review-phone");
