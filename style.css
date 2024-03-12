@@ -547,6 +547,7 @@ line-height: 0.8em;
     display: flex; 
     width: 100%;
     min-height: 100vh; 
+    overflow: hidden;
 }
 .Review-text{
     text-align: center;
